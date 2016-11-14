@@ -29,7 +29,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Cara Install Laravel
 
 1. Clone project ini
-2. tulis di cmd # 'git clone web-clone'
+2. tulis di cmd # `git clone web-clone`
 1. Download [Composer](https://getcomposer.org/). Terus install
 2. masuk ke Directory laravel 
-3. tulis di cmd # 'composer install'
+3. tulis di cmd # `composer install`
