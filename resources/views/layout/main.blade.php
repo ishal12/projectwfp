@@ -8,6 +8,8 @@
 
     @include('partials._nav')
 
+    @include('partials._modal')
+
     @yield('slide')
 
     <div class="container marketing">
@@ -18,7 +20,9 @@
       @include('partials._footer')
 
     </div><!-- /.container -->
-
+    
     @include('partials._javascripts')
+
+    @yield('script')
   </body>
 </html>

@@ -20,3 +20,11 @@ Route::get('about', 'PagesController@getAbout');
 Route::get('contact', 'PagesController@getContact');
 
 Route::get('admin', 'PagesController@getAdmin');
+
+Route::get('login', 'PagesController@getLogin');
+
+//AUTH ROUTE
+
+Route::get('login', 'UserController@getLogin');
+Route::post('login', 'UserController@postLogin');
+Route::get('logout', 'UserController@getLogout');

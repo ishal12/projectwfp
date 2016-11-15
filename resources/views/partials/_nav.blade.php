@@ -17,6 +17,9 @@
             <li @yield('activeAbout')><a href="/about">About</a></li>
             <li @yield('activeContact')><a href="/contact">Contact</a></li>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li id="myBtn"><a href="#">Login</a></li>
+          </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->

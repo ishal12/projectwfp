@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminsTable extends Migration
+class CreateDosensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,8 +12,11 @@ class CreateAdminsTable extends Migration
      */
     public function up()
     {
-        Schema::create('admins', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('dosens', function (Blueprint $table) {
+            $table->increments('npk');
+            $table->string('nama');
+            $table->integer('jabatanid')->unsigned();
+            $table->foreign('jabatanid')->references('id')->on('jabatans');
             $table->timestamps();
         });
     }
@@ -25,6 +28,6 @@ class CreateAdminsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('admins');
+        Schema::drop('dosens');
     }
 }
